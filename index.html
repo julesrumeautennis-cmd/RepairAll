@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Sets the language of the document to French and enables dark mode by default -->
+<html lang="fr" class="dark">
+<head>
+  <!-- Specifies the character encoding for the document -->
+  <meta charset="UTF-8" />
+  <!-- Ensures the page is responsive and scales correctly on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- The title that appears in the browser tab -->
+  <title>RepairAll - AI Repair Assistant</title>
+  <!-- The favicon (icon in the browser tab), encoded as a Base64 SVG for performance -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM2MzY2RjEiLz4KPGcgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0yNy41IDI5QzI3LjUgMjUuMTMgMjQuMzcgMjIgMjAuNSAyMkMxOSAyMiAxNy42IDIyLjQgMTYuNSAyMy4xIi8+CjxwYXRoIGQ9Ik0yMC41IDEzQzI0LjM3IDEzIDI3LjUgMTYuMTMgMjcuNSAyMEMyNy41IDIwLjkyIDI3LjM0IDIxLjggMjcuMDIgMjIuNiIvPgo8cGF0aCBkPSJNMTkuMDcgMTkuOTNMMTMuMTQgMjUuODZDMTIuNzUgMjYuMjUgMTIuNzUgMjYuODggMTMuMTQgMjcuMjdMMTQuNTYgMjguNjlDMTQuOTUgMjkuMDggMTUuNTggMjkuMDggMTUuOTcgMjguNjlMMjEuOSAyMi43NiIvPgo8cGF0aCBkPSJNMTggMTlMMTYgMjEiLz4KPHBhdGggZD0iTTI0LjggMTUuNUMyNC44IDE0LjY3IDI0LjEzIDE0IDIzLjMgMTRIMjEuNUMyMC42NyAxNCAyMCAxNC42NyAyMCAxNS41VjE3LjNDMjAgMTguMTMgMjAuNjcgMTguOCAyMS41IDE4LjhIMjMuM0MyNC4xMyAxOC44IDI0LjggMTguMTMgMjQuOCAxNy4zVjE1LjVaIi8+CjxjaXJjbGUgY3g9IjEyIiBjeT0iMTciIHI9IjIiLz4KPGNpcmNsZSBjeT0iMTYiIGN5PSIxMyIgcj0iMiIvPgo8bGluZSB4MT0iMTMuNCIgeTE9IjE2IiB4Mj0iMTQuNiIgeTI9IjE0Ii8+CjwvZz4KPC9zdmc+Cg==">
+
+  <!-- Include Tailwind CSS from a CDN for styling the application -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configure Tailwind CSS directly in the HTML -->
+  <script>
+    tailwind.config = {
+      // Use the 'class' strategy for dark mode (toggled by adding a 'dark' class to the html element)
+      darkMode: 'class',
+      theme: {
+        extend: {
+          // Set 'Inter' as the default sans-serif font
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts for typography -->
+  <!-- Preconnect to Google Fonts servers for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Import the 'Inter' font with various weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline CSS for global styles -->
+  <style>
+    body {
+      /* Apply the 'Inter' font to the entire page */
+      font-family: 'Inter', sans-serif;
+      /* Set a dark background color as a fallback */
+      background-color: #0F172A; /* bg-slate-900 */
+      /* Create a subtle, modern gradient background */
+      background-image: radial-gradient(circle at 10% 20%, rgb(31, 41, 55) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 90%, rgb(51, 65, 85) 0%, transparent 40%);
+    }
+
+    /* Define a keyframe animation for a fade-in and slide-up effect */
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Create a utility class to apply the animation */
+    .animate-fade-in-up {
+      animation: fade-in-up 0.6s ease-out forwards;
+    }
+  </style>
+
+  <!-- ES Module Shims: A script that allows modern JavaScript modules (import/export) to work in older browsers. -->
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+  
+  <!-- Import Map: Defines shortcuts for module imports. Instead of writing the full URL, we can just write 'react', 'react-dom/client', etc. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://aistudiocdn.com/react@^19.2.0",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/",
+      "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+      "@auth0/auth0-react": "https://aistudiocdn.com/@auth0/auth0-react@^2.8.0"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- The root div where the React application will be rendered -->
+  <div id="root"></div>
+  <!-- The main script for the application. 'type="module"' allows using import/export syntax. -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

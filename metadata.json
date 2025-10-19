@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Repair Assistant",
+  "description": "An AI-powered application that generates visual, step-by-step tutorials to help you fix your broken items. Just upload a photo, describe the problem, and get a custom repair guide.",
+  "requestFramePermissions": []
+}
