@@ -15,10 +15,6 @@ Open Source: All code is available on GitHub under an MIT License.
 🚀 Tech Stack
 RepairALL relies on the Google Gemini API for both reasoning (generating tool lists and steps) and image generation (creating the visual guide).
 
-Frontend: React Native (Expo)
-
-Backend: Node.js (TypeScript)
-
 AI: Google Gemini API
 
 Authentication: Auth0
