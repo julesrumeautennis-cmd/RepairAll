@@ -1,11 +1,13 @@
 **Try it out here** : https://ai-repair-assistant-926892979671.us-west1.run.app/
+
 **RepairALL:** AI-Powered Open Source Guide for Everyday Repairs 🛠️
 RepairALL is an open-source mobile app that fights waste by making DIY repairs easy for everyone. It uses multimodal AI to turn a photo of a broken object into a visual, step-by-step repair tutorial.
 
 The project's goal is to democratize repair knowledge, empowering users to fix what they own and promote sustainability.
 
-![IMG_8487 3](https://github.com/user-attachments/assets/e03f6836-12f1-4a55-826e-c839d3998428)
-![IMG_8487 2](https://github.com/user-attachments/assets/052d30b0-2b26-450a-b374-e51ea346230c)
+<img width="300" height="800" alt="IMG_8485 (1)" src="https://github.com/user-attachments/assets/bf595460-075c-4a5e-8eb7-f91114984afe" />
+<img width="300" height="800" alt="IMG_8487 3" src="https://github.com/user-attachments/assets/539cba45-42d3-40d6-9548-a06416ed7236" />
+
 
 **✨ Key Features**
 
